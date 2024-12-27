@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Compañeros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Azul clarito */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        h1 {
+            color: #0077cc; /* Azul más fuerte */
+        }
+
+        .network-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .network-item {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .network-item h2 {
+            color: #0077cc;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .network-item p {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888888;
+        }
+
+        @media (max-width: 768px) {
+            .network-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .network-item {
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            .network-item h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redes de Compañeros</h1>
+        <div class="network-list">
+            <div class="network-item">
+                <h2>Página Web 1</h2>
+            </div>
+            <div class="network-item">
+                <h2>Página Web 2</h2>
+            </div>
+            <div class="network-item">
+                <h2>Página Web 3</h2>
+            </div>
+            <div class="network-item">
+                <h2>Página Web 4</h2>
+            </div>
+        </div>
+        <footer>
+            &copy; 2024 Red de Compañeros. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
+
