@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Azul clarito */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0077cc; /* Azul más fuerte */
+        }
+
+        p {
+            color: #555555;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, textarea, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contacta conmigo
+        </h1>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <footer>
+            &copy; 2024 Pagina web FII. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
