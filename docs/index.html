@@ -3,35 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Mi Página Web - Inicio</title>
+    <link rel="stylesheet" href="public/styles.css"> <!-- Ruta al archivo CSS -->
+    <style>
+        /* Estilo básico para todas las páginas */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Azul clarito */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077cc;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center;     /* Centrado vertical */
+            height: 80vh;            /* Altura del 80% de la ventana */
+            text-align: center;
+        }
+
+        h2 {
+            color: #0077cc;
+            font-size: 2em;
+        }
+
+        p {
+            color: #555555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px 0;
+            text-align: center;
+            background-color: #0077cc;
+            color: white;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Cabecera de navegación -->
     <header>
-        <h1>Mi Página Web</h1> <!-- Título centrado -->
+        <h1>Página web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="degree.html">Mi Grado</a></li>
+                <li><a href="topic.html">Tema de Interés</a></li>
+                <li><a href="contact.html">Contáctame</a></li>
+                <li><a href="net.html">Red</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Menú de navegación vertical -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
-            <li><a href="degree.html">Mi Grado</a></li>
-            <li><a href="net.html">Tema de interés</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Contenido principal centrado -->
+    <div class="container">
+        <div>
+            <h2>Bienvenido/a a mi Página Web</h2>
+            <p>Aquí encontrarás información sobre el grado en Ingeniería Informática, sobre mí y otros temas de interés relacionados con la tecnología.</p>
+        </div>
+    </div>
 
-    <!-- Sección principal (Inicio) -->
-    <main>
-        <section class="content">
-            <h2>¡Bienvenidos!</h2>
-            <p>Soy estudiante de Ingeniería Informática. Aquí podrás aprender más sobre mí, mi grado y temas de interés.</p>
-        </section>
-    </main>
-
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Mi Página Web</p>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

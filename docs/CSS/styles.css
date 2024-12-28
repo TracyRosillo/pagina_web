@@ -1,70 +1,87 @@
-/* Archivo: docs/CSS/styles.css */
-
-/* Estilos generales del cuerpo */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul clarito */
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Color de fondo */
-    color: #333; /* Color del texto */
 }
 
-/* Estilo del encabezado */
 header {
-    background-color: #007acc; /* Color de fondo azul claro */
-    color: white; /* Color del texto */
+    background-color: #0077cc;
     padding: 20px;
+    color: white;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-/* Estilo del menú de navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    background-color: #006bb3; /* Azul más oscuro */
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo del pie de página */
 footer {
-    background-color: #333;
-    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888888;
+}
+
+h1, h2 {
+    color: #0077cc; /* Azul más fuerte */
+}
+
+p {
+    color: #555555;
+}
+
+.container {
     text-align: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Estilo para los formularios y otros elementos */
+input, textarea, button {
+    width: 90%;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-/* Estilo de las secciones */
-section {
-    margin: 20px;
-    padding: 20px;
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+.network-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.network-item {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2, h3 {
-    color: #007acc;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
