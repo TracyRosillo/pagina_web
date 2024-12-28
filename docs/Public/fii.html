@@ -26,6 +26,26 @@
             margin: 0;
         }
 
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
         .content {
             max-width: 900px;
             margin: 20px auto;
@@ -70,10 +90,22 @@
     </style>
 </head>
 <body>
+    <!-- Encabezado con el menú de navegación -->
     <header>
         <h1>Fundamentos de Ingeniería Informática</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="degree.html">Mi Grado</a></li>
+                <li><a href="topic.html">Tema de Interés</a></li>
+                <li><a href="contact.html">Contáctame</a></li>
+                <li><a href="net.html">Red</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Contenido de la página -->
     <div class="content">
         <h2>Descripción de la Asignatura</h2>
         <p>
@@ -100,6 +132,7 @@
         </ul>
     </div>
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Mi Grado - Ingeniería Informática</p>
     </footer>
