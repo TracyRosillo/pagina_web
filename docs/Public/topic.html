@@ -14,12 +14,44 @@
             color: #333333;
         }
 
-        header {
-            background-color: #0077cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+        /* Estilo para el header */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;  /* Elimina los puntos por defecto de la lista */
+    padding: 0;        /* Elimina el padding predeterminado */
+    margin: 0;         /* Elimina el margin predeterminado */
+    display: flex;     /* Utiliza flexbox para alinearlos en una fila */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+}
+
+/* Estilo para los elementos de la lista */
+nav ul li {
+    margin: 0 15px;    /* Espacio entre los elementos del menú */
+}
+
+/* Estilo para los enlaces */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya al pasar el cursor */
+}
+
 
         h1 {
             font-size: 2.5em;
@@ -40,10 +72,23 @@
             font-size: 2em;
         }
 
+        h3 {
+            color: #0077cc;
+        }
+
         p {
             font-size: 1.1em;
             color: #555555;
             text-align: justify;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         .section-title {
@@ -55,7 +100,7 @@
 
         .image {
             max-width: 30%;  /* Ajusta el tamaño máximo de la imagen */
-            height: auto;    /* Mantiene la relación de aspecto original */
+            height: auto;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -88,6 +133,19 @@
     <header>
         <h1>Explorando el Metaverso</h1>
     </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="degree.html">Mi Grado</a></li>
+                <li><a href="topic.html">Tema de Interés</a></li>
+                <li><a href="contact.html">Contáctame</a></li>
+                <li><a href="net.html">Red</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 
     <div class="content">
         <h2>Introducción al Metaverso</h2>
@@ -144,6 +202,149 @@
             <div class="image-container">
                 <img src="../Images/imagen5.jpg" alt="Bitcoin" class="image">
             </div>
+        </div>
+
+        <!-- Sección de Ventajas y Desventajas -->
+        <div class="section-title">Ventajas y Desventajas</div>
+        <div class="section-content">
+            <h3>Ventajas</h3>
+            <ul>
+                <li>Conectar el mundo y eliminar la distancia física.</li>
+                <li>Mejoras en el entorno de trabajo.</li>
+                <li>Nuevas oportunidades de negocio.</li>
+                <li>Avances en el aprendizaje y educación.</li>
+                <li>Relaciones originales entre marcas y usuarios.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li>Ciberdelincuencia.</li>
+                <li>Problemas de adicción.</li>
+                <li>Desigualdad económica y acceso limitado.</li>
+                <li>Aislamiento social extremo.</li>
+                <li>Impacto ambiental.</li>
+            </ul>
+        </div>
+
+        <!-- Sección del Futuro de la Tecnología -->
+        <div class="section-title">El Futuro de la Tecnología</div>
+        <div class="section-content">
+            <h3>Historia</h3>
+            <p>
+                Para poder hablar del presente y el futuro del metaverso, primero hay que conocer sus 
+                orígenes y su historia. 
+                El “metaverso” como concepto como tal, apareció por primera vez en 1992 en palabras 
+                del escritor estadounidense Neal Stephenson, el cuál utilizó este término por primera 
+                vez en su novela “Snow Crash” y lo definía como “una especie de espacio virtual 
+                colectivo, compatible y convergente con la realidad. 
+                Realmente, el metaverso cobra importancia treinta años después del primer uso de este 
+                término, utilizado en empresas como “Epic Games” o “Facebook” y dirigido hacia 
+                conseguir su extensión digital a todos los ámbitos de la vida (sociedad, política, 
+                economía, entretenimiento, cultura...). 
+                El primer referente que se puede considerar como antecedente del metaverso actual se 
+                “Second Life”, un entorno virtual no inmersivo donde las personas podían conversar 
+                entre ellas en tiempo real mediante avatares y donde se podía realizar transacciones 
+                comerciales y actividades muy diversas. De esta forma, los usuarios se refugiaban 
+                debajo de una identidad virtual con el fin de entablar conversaciones con otros usuarios, 
+                conspirar, jugar, manifestar sus opiniones sobre situaciones del momento que sucedían 
+                en la vida real o simplemente divertirse de una manera remota y alternativa a la 
+                comúnmente conocida hasta ese momento. 
+            </p>
+            <h3>Actualidad</h3>
+            <p> 
+                Pasando a hablar sobre ya si, la actualidad y su futuro, cada vez surgen más propuestas 
+diferentes y novedosas de “mundos” virtuales del metaverso a los que acceder a través 
+de diversos dispositivos. Podemos encontrar experiencias más focalizadas en el gaming 
+(Axie Infinity, Minecraft, Roblox...), tanto como más centradas en la socialización y 
+economía de una manera digital (Decentraland, The Sandbox, VR Chat, Stageverse...). 
+Un ejemplo muy actual y en gran auge es el metaverso de Mark Zuckerberg y Facebook. 
+Este metaverso ofrece oportunidades tanto en el mundo físico (con la posibilidad de 
+crear nuestros propios negocios, reuniones virtuales de trabajo con una oficina 
+común...) tanto en el propio ámbito del mundo digital, teniendo su propia economía con 
+algún tipo de moneda virtual, o permitiéndonos interactuar con personas que están 
+físicamente lejos de manera más realista y cercana que por una simple llamada de 
+teléfono o conferencia virtual.
+            </p>
+            <h3>Prospectiva a Futuro</h3>
+            <p>
+                La prospectiva que sigue este término de “metaverso” viene ligado a la alfabetización 
+digital de una manera muy cercana. Por parte de las marcas y las empresas, ellas se 
+centran en utilizar el metaverso para reforzar su marketing relacional para poder explotar 
+de manera óptima las posibilidades interactivas y socializadoras que ofrece la 
+virtualización del metaverso. 
+Determinar un futuro concreto es complicado cuanto menos en un ámbito tan extenso 
+en la vida cotidiana y en tan auge, pero podemos afirmar con certeza que el metaverso 
+solo está por empezar, y la evolución que tendrá será enorme y con un crecimiento 
+exponencial, solo hace falta disponer de la tecnología adecuada para que este 
+metaverso pueda crecer sin problemas. Este recurrirá a vivencias inmersivas, como por 
+ejemplo el metaverso de Zuckerberg, en el cuál veremos una realidad virtual aumentada 
+y multicorporativa utilizando la nueva tecnología IA de la que disponemos. 
+            </p>
+        </div>
+
+        <!-- Sección de Ética -->
+        <div class="section-title">Visión Ética</div>
+        <div class="section-content">
+            <h3>Responsabilidad Corporativa</h3>
+            <p>
+                Dado que grandes corporaciones tecnológicas lideran la creación del metaverso, estas 
+empresas deben actuar con responsabilidad social, comprometiéndose a no explotar a 
+los usuarios, a promover la seguridad y el bienestar en sus plataformas. Además, los 
+gobiernos tendrán que establecer normativas para proteger los derechos de los usuarios, regulando los límites de la publicidad invasiva y la manipulación de 
+comportamientos. 
+            </p>
+            <h3>Privacidad y protección de datos</h3>
+            <p>
+                El metaverso recoge grandes cantidades de información personal. Cada movimiento, 
+interacción y elección dentro de este entorno puede registrarse y analizarse, lo que 
+plantea preguntas sobre la privacidad y la protección de datos. Existe el riesgo de que 
+las empresas recojan información sin el consentimiento adecuado o la utilicen para 
+manipular comportamientos. Un enfoque ético debe velar por movimientos 
+transparentes, en los que los usuarios sean conscientes qué datos se recogen y cómo 
+se usan. La protección de la privacidad es un derecho que debería defenderse en todo 
+momento dentro del metaverso. 
+            </p>
+            <h3>Identidad y Autenticidad</h3>
+            <p>Dentro del metaverso, las personas pueden asumir diversas identidades, lo que ofrece 
+                libertad de expresión, pero también conlleva riesgos de suplantación de identidad y 
+                manipulación de identidades falsas. Una visión ética debe encontrar el equilibrio entre 
+                el respeto a la libertad personal y la necesidad de contar con una serie de 
+                procedimientos que garanticen la autenticidad y la seguridad. Por ejemplo, verificar la 
+                identidad de los usuarios en ciertos contextos puede ser esencial para prevenir el 
+                acoso o el fraude, especialmente en el ámbito comercial o laboral. </p>
+        <h3> Los niños en el metaverso</h3>
+        <p>Ligado al apartado anterior, el control de la edad es un de los factores en los que no 
+            tenemos un cien por cien de transparencia porque podemos tener un número 
+            modificado. Hay situaciones en las que encontramos a adultos que se hacen pasar por 
+            niños, y viceversa. 
+            Los niños son más vulnerables a la explotación y el mal uso de sus datos personales, lo 
+            que plantea la necesidad de establecer normativas rigurosas sobre la recopilación, 
+            almacenamiento y uso de información. las empresas tecnológicas tienen la 
+            responsabilidad de crear entornos seguros, mientras que los padres y educadores 
+            deben trabajar en la formación de los niños para que puedan desenvolverse de manera 
+            ética y responsable en estos mundos virtuales.</p>
+        <h3>Bienestar Psicológico y Social </h3>
+        <p>El metaverso puede ofrecer experiencias inmersivas y estimulantes, pero también 
+            corre el riesgo de volverse adictivo y afectar la salud mental. Pasar largos períodos en 
+            un entorno virtual puede alejar a los usuarios de sus relaciones en el mundo real y su bienestar. Además, experiencias negativas como el acoso virtual o la exposición a 
+            cierto contenido pueden tener un impacto en la salud psicológica. Es importante 
+            implementar medidas de seguridad, así como herramientas que permitan a los 
+            usuarios gestionar sus interacciones y controlar el tiempo que pasan en el entorno 
+            virtual. </p>
+        <h3>Impacto Ambiental </h3>
+        <p>La infraestructura necesaria para sostener el metaverso, incluyendo servidores y 
+            centros de datos, tiene un impacto ambiental considerable. La visión ética debe 
+            considerar la sostenibilidad, buscando minimizar la huella de carbono del metaverso 
+            mediante energías renovables y prácticas responsables de eficiencia energética. 
+            Además, es importante fomentar la concienciación sobre el impacto que las 
+            actividades digitales pueden tener en el medio ambiente. </p>
+        <h3>Derechos Digitales y Libertad de Expresión </h3>
+        <p>En un mundo virtual controlado por empresas privadas, surge el riesgo de censura y 
+            limitaciones en la libertad de expresión. Es necesario que existan garantías de 
+            derechos digitales, donde los usuarios tengan la libertad de expresarse sin temor a 
+            represalias o censura injustificada. Sin embargo, también es fundamental que haya un 
+            marco ético que regule el discurso de odio y otros contenidos nocivos, manteniendo un 
+            equilibrio entre la libertad de expresión y la seguridad de la comunidad.</p>
+
         </div>
     </div>
 
