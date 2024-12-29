@@ -114,6 +114,14 @@ footer p {
     margin: 0;
 }
 
+/* Estilo para imágenes */
+img {
+    max-width: 30%; /* Limita el tamaño de la imagen al ancho del contenedor */
+    height: auto;    /* Mantiene la relación de aspecto */
+    display: block;  /* Elimina espacio adicional debajo de las imágenes */
+    margin: 20px auto; /* Añade espacio alrededor y centra las imágenes */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 /* Estilo responsive */
 @media (max-width: 768px) {
     header h1 {
