@@ -1,28 +1,43 @@
-/* Estilo básico para todas las páginas */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Azul clarito */
+/* Estilo base para toda la página */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #0077cc;
+}
+
+/* Cabecera */
 header {
     background-color: #0077cc;
-    padding: 20px;
     color: white;
+    padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    font-weight: bold;
 }
 
+/* Estilos de navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -30,43 +45,91 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #005fa3;
 }
 
+/* Estilo de la zona principal (contenido centrado) */
 .container {
-    display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center;     /* Centrado vertical */
-    height: 80vh;            /* Altura del 80% de la ventana */
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-h2 {
-    color: #0077cc;
-    font-size: 2em;
+.container h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #555555;
+.container p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Estilo de botones */
+button, a.button {
+    background-color: #0077cc;
+    color: white;
     font-size: 1.1em;
-    line-height: 1.6;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
+button:hover, a.button:hover {
+    background-color: #005fa3;
+}
+
+/* Estilo de pie de página */
 footer {
-    margin-top: 50px;
-    padding: 10px 0;
     text-align: center;
     background-color: #0077cc;
     color: white;
+    padding: 10px 0;
+    margin-top: 50px;
     font-size: 14px;
+    border-radius: 8px;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }
