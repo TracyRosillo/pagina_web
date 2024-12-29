@@ -1,4 +1,4 @@
-/* styles.css */
+/* Estilo básico para todas las páginas */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* Azul clarito */
@@ -11,6 +11,11 @@ header {
     padding: 20px;
     color: white;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -27,61 +32,41 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #888888;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-h1, h2 {
-    color: #0077cc; /* Azul más fuerte */
+.container {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    height: 80vh;            /* Altura del 80% de la ventana */
+    text-align: center;
+}
+
+h2 {
+    color: #0077cc;
+    font-size: 2em;
 }
 
 p {
     color: #555555;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-.container {
+footer {
+    margin-top: 50px;
+    padding: 10px 0;
     text-align: center;
-    width: 80%;
-    max-width: 900px;
-}
-
-/* Estilo para los formularios y otros elementos */
-input, textarea, button {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
     background-color: #0077cc;
     color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 14px;
 }
 
-button:hover {
-    background-color: #005fa3;
-}
-
-.network-list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.network-item {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 10px;
-    width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+footer p {
+    margin: 0;
 }
